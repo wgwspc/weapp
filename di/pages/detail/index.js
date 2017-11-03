@@ -1,66 +1,88 @@
 // pages/detail/index.js
-Page({
+var app = getApp();
+var user_id;
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
-  },
+var __dirname = 'pages/index',
+  __overwrite = require('../../utils/overwrite.js');
+require('../../utils/dateFormat.js');
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
+(function (require, Page) {
+  var CalendarPlugin = require('components/calendar/index');
+  Page({
+    data: {
+      uid: user_id,
+      id:'',
+      date: {
+        indate: new Date().format('yyyy-MM-dd'),
+        outdate: new Date(+new Date + 3600000 * 24).format('yyyy-MM-dd')
+      }
+    },
+    onLoad: function (options) {
+      // 生命周期函数--监听页面加载
+      var that = this;
+      that.setData({
+        indate: options.indate,
+        outdate: options.outdate,
+        id : options.id,
+      });
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
+      /* wx.request({
+           url: app.d.ceshiUrl+'Api/Detail/index',
+           method:'post',
+           data:{
+            id: id
+           },
+           header: {
+             'Content-Type': 'application/x-www-form-urlencoded'
+           },
+           success:function(res){
+             var detail = res.data.detail;
+            
+           },
+           fail: function (e) {
+             wx.showToast({
+               title: '网络异常！',
+               duration: 2000
+             });
+           },
+ 
+         }) */
+    },
+    onReady: function () {
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+    },
+    openCalendar: function () {
+      var that = this;
+      CalendarPlugin({
+        begin: that.data.date.indate,
+        end: that.data.date.outdate
+      }, function (res) {
+        that.data.date.indate = res.start.format('yyyy-MM-dd');
+        that.data.date.outdate = res.end.format('yyyy-MM-dd');
+        that.setData({
+          date: that.data.date
+        })
+      })
+    },
+    openMap:function(){
+      wx.openLocation({
+        latitude: '',
+        longitude: '',
+      })
+    },
+    addOrder: function(){
+      if(!uid){
+        wx.navigateTo({
+          url: '../login/register',
+        })
+      }
+     
+      wx.navigateTo({
+        url: '../addOrder/cart?uid='+this.data.uid+'&hid='+this.data.id+'&indate='+this.data.date.indate+'&outdate='+this.data.date.outtime,
+      })
+    }
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
+  });
+})(__overwrite.require(require, __dirname), __overwrite.Page);
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
-})

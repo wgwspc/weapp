@@ -47,7 +47,7 @@ require('../../utils/dateFormat.js');
       this.setData({
         searchValue: searchValue
       }); 
-      console.log(searchValue);
+      
     },
     searchlist: function(){
       

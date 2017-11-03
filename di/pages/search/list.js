@@ -29,29 +29,40 @@ require('../../utils/dateFormat.js');
         searchValue: options.searchValue,
       });
      
-   wx.request({
-        url: app.d.ceshiUrl+'Api/Searcg/list',
-        method:'post',
-        data:{
-          city: this.data.city,
-          indate: this.data.date.indate,
-          outdate: this.data.date.outdate,
-          keywords: this.data.ssearchValue,
-        },
-        header: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        success:function(res){
-          var list = res.data.list;
-          if(list=''){
-            wx.showToast({
-              title: '没有更多数据了',
-              duration:2000
+     /* wx.request({
+          url: app.d.ceshiUrl+'Api/Searcg/list',
+          method:'post',
+          data:{
+            city: this.data.city,
+            indate: this.data.date.indate,
+            outdate: this.data.date.outdate,
+            keywords: this.data.ssearchValue,
+          },
+          header: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          success:function(res){
+            var list = res.data.list;
+            var gto  = res.data.imgs;
+            that,setData({
+                hotD : list,
+                imgObj: gto,
             });
-          }
-        }
+            if(list=''){
+              wx.showToast({
+                title: '没有更多数据了',
+                duration:2000
+              });
+            }
+          },
+          fail: function (e) {
+            wx.showToast({
+              title: '网络异常！',
+              duration: 2000
+            });
+          },
 
-      }) 
+        }) */
     },
     onReady: function () {
 

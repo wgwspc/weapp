@@ -7,14 +7,14 @@
   <span>开心公寓</span>
   
 </view>
-<view class="address"  bindtap="">
+<view class="address"  bindtap="openMap">
   <span>花园路</span>
 </view>
 <view class="tel"  bindtap="">
   <span>1223332211</span>
 </view>
-<view class="time" bindtap="" >
-  <text>11月01日（今天）-11月02日（明天）1晚</text>
+<view class="usermotto" bindtap="openCalendar">
+    <view  bindtap="getServerDate">{{date.indate}}-{{date.outdate}}</view>
 </view>
 <view class="ding" >
 	<view class="cell-left">
@@ -24,29 +24,37 @@
 	<view class="cell-right">
 		<span class="j">276</span>
   <navigator url="../addOrder/cart">
-		<button class='btn' bindtap="">立即预定</button>
+		<button class='btn' bindtap="addOrder">立即预定</button>
   </navigator>
 	</view>
 </view>  
-<view class="s1" bindtap="">
+<view class="s1" >
+<navigator url="">
   <view class="t1">
     <text>房屋介绍</text>
   </view>
+</navigator>
 </view>
-<view  class="s1" bindtap="" >
+<view  class="s1"  >
+<navigator url="">
   <view class="t1">
     <text>入住须知</text>
   </view>
+</navigator>
 </view>
-<view class="s1" bindtap="">
+<view class="s1" >
+<navigator url="">
   <view class="t1">
     <text>设施服务</text>
   </view>
+</navigator>
 </view>
-<view class="s1" bindtap="" >
+<view class="s1" >
+<navigator url="">
   <view class="t1">
     <text>服务费用&特别说明</text>
   </view>
+</navigator>
 </view>
 
 

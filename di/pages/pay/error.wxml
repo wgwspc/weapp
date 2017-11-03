@@ -6,6 +6,6 @@
 	<view>请重试或去[我的订单]进行支付</view>
 </view>
 <view>
-	<button>重新支付</button>
+	<button bindtap="pay">重新支付</button>
 	<button>我的订单</button>
 </view>

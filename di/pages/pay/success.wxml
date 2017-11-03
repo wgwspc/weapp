@@ -2,9 +2,11 @@
 <view>
 	<icon></icon>
 	<view>支付成功</view>
-	<view>请尽快入住或去[我的订单]进行查看</view>
+	<view>请联系房东尽快入住或去[我的订单]进行查看</view>
 </view>
 <view>
-	<button>联系房东</button>
+
+<navigator url="">
 	<button>我的订单</button>
+</navigator>
 </view>
