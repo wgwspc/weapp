@@ -1,0 +1,49 @@
+{
+  "pages": [
+	"pages/index/index",
+	"pages/search/list",
+	"pages/detail/index",
+
+	"pages/order/detail",
+	"pages/addOrder/cart",
+	"pages/switchcity/switchcity",
+	
+	
+	"pages/order/list",
+	"pages/my/index",
+	"pages/login/register",
+	"pages/login/login",
+  "components/calendar/page/index"
+
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "馨宿",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#59A5F0",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+       
+      },
+      {
+        "pagePath": "pages/order/list",
+        "text": "我的订单"
+        
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  }
+ 
+  
+  
+}

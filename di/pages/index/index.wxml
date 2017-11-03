@@ -1,0 +1,26 @@
+<view class="fm">
+  <view class="chooseCity pd-70 pdt-0">
+  	<view class="citySelect">
+  		<view class="hotelCity" bindtap="selectCity" >{{city}}</view>
+  	</view>
+
+    <view class="chooseDate">
+      <view class="usermotto" bindtap="openCalendar">
+        <view  bindtap="getServerDate">{{date.indate}}-{{date.outdate}}</view>
+      </view>
+    </view>
+  </view>  
+  <view class="search-bar">
+		<input class="search-txt" placeholder-class="search-txt-plc" bindinput="searchValueInput" placeholder="请输入关键词搜索" 
+  value="{{searchValue}}" type="text"/>
+	</view>
+
+  <view class='subm'>
+   
+      <button class="sub" bindtap="searchlist">查找美屋</button>  
+   
+  </view>
+  
+</view>
+
+ 

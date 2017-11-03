@@ -1,0 +1,17 @@
+<!--pages/profile/index.wxml-->
+
+
+<view style="height:200px;">
+  <view></view>
+  <view>
+  <navigator url="../login/register">
+      <button style="width:160px;">登录/注册</button>
+  </navigator>
+  </view>
+</view>
+
+<view style="height:80rpx;background:white;"><text style="line-height:80rpx;">全部订单</text></view>
+<view style="height:80rpx;background:white;"><text style="line-height:80rpx;">客服</text></view>
+<view style="top:20px;">
+  <button style="width:320px;">退出登录</button>
+</view>

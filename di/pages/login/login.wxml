@@ -1,0 +1,10 @@
+<!--pages/login/login.wxml-->
+<view>
+  <image></image>
+  <text>水木年华</text>
+  <text>135****9416</text>
+</view>
+<view>
+<button>直接登录</button>
+<button>换个账号登录</button>
+</view>

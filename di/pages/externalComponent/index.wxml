@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+    <text class="usermotto">{{date.indate}}-{{date.outdate}}</text>
+    <view class="usermotto" bindtap="openCalendar">
+        <view  bindtap="getServerDate">{{date.indate}}-{{date.outdate}}</view>
+    </view>
+</view>

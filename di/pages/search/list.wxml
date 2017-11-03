@@ -1,0 +1,30 @@
+<view class="header" style="border:1px ">
+   <view class="search-bar">
+    <span style="width:150rpx;" bindtap="selectCity" >{{city}}</span>
+		<input class="search-txt" placeholder-class="search-txt-plc" bindfocus="viewSearch" value="{{searchValue}}" placeholder="请输入关键词搜索" type="text"/>
+	</view>
+  <view class="desc">
+     <view class="usermotto" bindtap="openCalendar">
+        <view  bindtap="getServerDate">
+          <text>{{date.indate}}-</text>
+          <text>{{date.outdate}}</text>
+        </view>
+      </view>
+    <button bindtap=''>位置</button>
+    <button bindtap=''>排序</button>
+    <button bindtap=''>更多</button>
+  </view>
+</view>
+<navigator url="../detail/index">
+<view  class="view" style="post">
+    <image src="/images/timg.jpg" style="height:300px;width:100%;"></image>
+    <view class="cell-left">
+      <span>开心公寓</span>
+      <span class="x">近白堤</span>
+	  </view>
+    <view class="cell-right">
+		  <span style="color:red">236</span>
+		
+	</view>
+</view>
+</navigator>

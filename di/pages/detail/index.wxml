@@ -1,0 +1,54 @@
+<view>
+	<navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">
+		<image src="/images/timg.jpg" style="height:200px;width:100%"></image>
+	</navigator>
+</view>  
+<view class="name">
+  <span>开心公寓</span>
+  
+</view>
+<view class="address"  bindtap="">
+  <span>花园路</span>
+</view>
+<view class="tel"  bindtap="">
+  <span>1223332211</span>
+</view>
+<view class="time" bindtap="" >
+  <text>11月01日（今天）-11月02日（明天）1晚</text>
+</view>
+<view class="ding" >
+	<view class="cell-left">
+		<span class="q" style="font-size:24rpx;">全额预付价</span>
+		<span class="y" style="font-size:20rpx;">预付全额限时退</span>
+	</view>
+	<view class="cell-right">
+		<span class="j">276</span>
+  <navigator url="../addOrder/cart">
+		<button class='btn' bindtap="">立即预定</button>
+  </navigator>
+	</view>
+</view>  
+<view class="s1" bindtap="">
+  <view class="t1">
+    <text>房屋介绍</text>
+  </view>
+</view>
+<view  class="s1" bindtap="" >
+  <view class="t1">
+    <text>入住须知</text>
+  </view>
+</view>
+<view class="s1" bindtap="">
+  <view class="t1">
+    <text>设施服务</text>
+  </view>
+</view>
+<view class="s1" bindtap="" >
+  <view class="t1">
+    <text>服务费用&特别说明</text>
+  </view>
+</view>
+
+
+
+

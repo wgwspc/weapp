@@ -1,0 +1,11 @@
+<!--pages/order/pay.wxml-->
+
+<view>
+	<icon></icon>
+	<view>支付失败</view>
+	<view>请重试或去[我的订单]进行支付</view>
+</view>
+<view>
+	<button>重新支付</button>
+	<button>我的订单</button>
+</view>

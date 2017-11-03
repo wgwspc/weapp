@@ -1,0 +1,37 @@
+<!--pages/order/detail.wxml-->
+<view  style="height:100rpx;">
+  <view style="line-height:100rpx;font-size:36rpx;float:left;">订单号：MW3072288</view>
+  <view style="line-height:100rpx;font-size:36rpx;float:right;">状态：等待支付订金</view>
+</view>
+<view style="height:150rpx;padding:0 20rpx;background:white;">
+  <view style="height:100rpx;">开心公寓 1套</view>
+  <view style="height:50rpx;font-size:26rpx;">入住：2017-11-01 退房：2017-11-02 12：00前</view>
+</view>
+<view style="height:80rpx;background:white;">总房费：276.00</view>
+
+<view style="height:100rpx;background:white;padding:20rpx 40rpx;top:20rpx;">
+  <view style="height:50rpx;">全额房费：276.00</view>
+  <view style="height:50rpx;">押金：300.00</view>
+</view>
+<view style="background:white;padding:0 20rpx;height:80rpx;top:20rpx;">预付：576.00</view>
+
+
+<view class="title">房屋信息</view>
+<view style="background:white;padding:0 20rpx;height:100rpx;">
+  <view style="height:50rpx;">开心公寓</view>
+  <view style="height:50rpx;">地址：花园路</view>
+</view>
+
+<view class="title">入住人信息</view>
+<view style="background:white;padding:20 20rpx;height:100rpx;">
+<view  style="height:50rpx;">姓名：莲花</view>
+<view  style="height:50rpx;">手机号：1352213413</view>
+</view>
+<view style="padding:0 20rpx;height:100rpx;display:flex;">
+  <button style="flex-grow:1;">取消订单</button>
+  <button style="flex-grow:1;background:orange;">去付款</button>
+  <button style="flex-grow:1;background:orange;">再次预订</button>
+</view>
+
+
+

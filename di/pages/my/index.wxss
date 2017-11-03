@@ -1,0 +1,6 @@
+/* pages/profile/index.wxss */
+page {
+	width: 100%;
+	height: 100%;
+	background: #f0eff5;
+}

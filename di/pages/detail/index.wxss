@@ -1,0 +1,87 @@
+/* pages/detail/index.wxss */
+page{
+  background-color:darkgrey;
+}
+.name{
+  height: 80rpx;
+  background: white;
+  
+}
+.name span{
+  position: relative;
+  display: block;
+  line-height: 60rpx;
+  left: 20px;
+}
+.address{
+  height: 80rpx;
+  background: white;
+}
+.address span{
+  line-height: 80rpx;
+  position:relative;
+  left: 20px;
+}
+.tel{
+  top: 10rpx;
+  height: 60rpx;
+  position: relative;
+  background: white;
+}
+.tel span{
+  left: 20px;
+  position: relative;
+}
+.time{
+  position: relative;
+  top: 40rpx;
+  height: 60rpx;
+  background: white;
+}
+.ding{
+  position: relative;
+  top:20px;
+  height:180rpx;
+  width: 710rpx;
+  padding: 10px;
+  background: white;
+}
+.ding .cell-left{
+  float: left;
+  width: 400rpx;
+  height: 160rpx;
+}
+.ding .cell-left .q{
+  display: block;
+  height: 60rpx;
+}
+.ding .cell-left .y{
+  display: block;
+  height: 120rpx;
+}
+.ding .cell-right{
+  width: 160rpx;
+  height: 110rpx;
+  float: right;
+}
+.ding .cell-right .j{
+  display: block;
+  color: red;
+  height: rpx;
+  text-align: right;
+  
+}
+.ding .cell-right .btn{
+  height: 60rpx;
+  background:red;
+  font-size: 24rpx;
+  color: white;
+}
+.s1{
+  clear: both;
+  position: relative;
+  background: white;
+  top: 10px;
+  height: 25px;
+  width: 100%;
+}

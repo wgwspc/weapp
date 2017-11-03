@@ -1,0 +1,77 @@
+<!--pages/order/cart.wxml-->
+<view>
+  <view class="img">
+    <view class="hn">开心公寓</view>
+  </view>
+  <view style="top:40px;background:white;padding:0 10px;">
+    <view style="color:#929fb1;">基础价</view>
+    <view style="left:10px;">入住：11月1日 离店：11月2日 共1晚</view>
+  </view>
+</view>
+<view>
+	<view class="personNum" style="background:white;height:40px;padding:0 10px;">
+    <view class="text" style="left:10px;">房屋数量</view>
+    <view class="outer" style="width:90px;">
+      <view class="minus" bindtap="minusAdultNum" >-</view>
+      <view class="num" >1套</view>
+      <view class="plus" bindtap="plusAdultNum" >+</view>
+    </view>
+  </view>
+
+  <view class="personNum ml-30" style="background:white;height:40px;padding:0 10px;">
+    <view class="text" style="left:10px;" >入住人数</view>
+    <view class="outer" style="width:90px;">
+      <view class="minus" bindtap="minusChildNum" >-</view>
+      <view class="num">1人</view>
+      <view class="plus" bindtap="plusChildNum" >+</view>
+    </view>
+  </view>
+	<view class="personNum ml-30" style="background:white;height:40px;padding:0 10px;">
+    <view class="text" style="font-size: 30rpx;left:10px;">入住人：</view>
+    <view style="display:inline-block;">
+      <input type='text' placeholder="姓名"/>
+    </view>
+  </view>
+	<view class="personNum ml-30" style="background:white;height:40px;padding:0 10px;">
+    <view class="text" style="font-size: 30rpx;left:10px;">手机号：</view>
+    <view style="display:inline-block;">
+      <input type='text' value="13524429416"/>
+    </view>
+  </view>
+	<view class="personNum ml-30" style="background:white;height:40px;padding:0 10px;">
+    <view class="text" style="font-size: 30rpx;left:10px;">身份证：</view>
+    <view style="display:inline-block;">
+      <input type="text" placeholder="入住人身份证"/>
+    </view>
+  </view>
+</view>
+
+<view>
+	<view style="height:40px;background:white;clear:both;top:10px;padding:0 10px;">
+    <view class="text" style="left:10px;">总房费：276.00</view>
+	</view>	
+  <view >
+    <view style="height:40px;background:white;clear:both;top:10px;padding:0 10px;">
+      <span class="text">代付金额：</span>
+      <span class="text" style="float:right">576.00</span>
+    </view>
+	  <view >
+      <view class="text" style="height:40px;background:white;clear:both;top:10px;padding:0 10px;">
+        <span>全额房费：</span>
+        <span style="float:right">276.00</span>
+      </view>
+      <view class="text" style="height:40px;background:white;clear:both;top:10px;padding:0 10px;">
+        <span>住房押金：</span>
+        <span style="float:right">300.00</span>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="footfixed tc">
+ 
+  <view class="fl_l w60">
+    <view class=" white w50 fl_l" bindtap="setModalStatus" data-status="1" style="width:40%;color:red;background:white;">576.00</view>
+    <view class="w50 fl_l bg_cheng white" bindtap="addShopCart" data-type="addcart" style="width:40%">立即支付</view>
+    
+  </view>
+</view>
